@@ -1,13 +1,20 @@
 body{
     box-sizing: border-box;
     background-color: rgb(118, 175, 224);
-    font-family: Roboto;
+    font-family: Roboto, monospace, sans-serif;
 }
 a{
     text-decoration: none;
     color: #5d94c5;
 }
-
+h1{
+    text-shadow: 3px 3px 5px gray;
+    font-size: 3rem;
+    color: #f4f7fc;
+    text-align: center;
+    width: 390px;
+    margin: 50px auto 50px;
+}
 #celphone{
     background-color: #f4f7fc;
     border-radius: 10px;
@@ -55,9 +62,7 @@ a{
     display: flex;
     justify-content: space-around;
 }
-.options:last-child{
-    justify-content: flex-start;
-}
+
 .conjuntos{
     flex-wrap: wrap;
     width: 70px;
@@ -76,4 +81,263 @@ a{
 .conjuntos p{
     text-align: center;
     font-size: 0.7rem;
+}
+
+
+/* pagina de agendamento*/
+header{
+    height: 50px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+header p{
+    font-size: 1.3rem;
+}
+.returnArrow{
+    margin: 0;
+    padding: 0;
+    width: 30px;
+}
+
+.selecao{
+    display: flex;
+    justify-content: center;
+}
+.agend{
+    padding: 10px 50px;
+    border: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.fila{
+    padding: 10px 50px;
+    border: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.selecao p:hover{
+    background-color: gray;
+}
+.tela{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 722px;
+}
+.bola{
+    margin: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color:#5d94c5;
+    text-align: center;
+}
+.bola a{
+    color: black;
+}
+
+/* novo atendimento */
+
+.areas{
+    margin-top: 25px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.areaBtn{
+    Color: #d2daed;
+    font-size: 1.2rem;
+    background-color: #126cbf;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    padding: 20px 0;
+}
+#outros{
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1em 1.5em;
+    background-color: #126cbf;
+    Color: #d2daed;
+}
+.proxBtn a{
+    display: flex;
+    margin-top: 240px;
+    width: 394px;
+}
+.prox{
+    padding: 1em 1em;
+    Color: #d2daed;
+    font-size: 1.2rem;
+    background-color: #126cbf;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.1rem;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* hospitais */ 
+
+.selectHospital{
+    margin-top: 25px;
+    text-align: center;
+}
+.hospitais{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.hospital{
+    border: 1px solid #1167b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 330px;
+}
+.hospital button{
+    border: none;
+    border-radius: 10px;
+    background-color: #126cbf;
+    Color: #d2daed;
+    height: 40px;
+}
+
+/* seleção de medicos, horarios e datas */
+
+.dadosplusSelect{
+    margin-top: 25px;
+    text-align: center;
+}
+.dadosplusSelect button{
+    border: none;
+    font-size: 2rem;
+}
+
+.medicos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.medico{
+    border: 1px solid #1167b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 330px;
+}
+.medico p{
+    width: 70px;
+}
+.medico button{
+    border: none;
+    border-radius: 10px;
+    background-color: #126cbf;
+    Color: #d2daed;
+    height: 40px;
+}
+
+/* agendamento concluido */
+
+.topo{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.topo p:first-child{
+    color: gray;
+    font-size:1.3rem;
+}
+
+.dataHR{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    align-items: center;
+    margin: 0 20px;
+}
+.nomeHospital{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    margin: 0 20px;
+    align-items: center;
+}
+.endereco{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    align-items: center;
+    margin: 0 20px;
+}
+.infos img{
+    width: 8%;
+    height: 8%;
+}
+
+.infos a p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.inputDiv{
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.texto{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: solid #126cbf 1px;
+}
+.enviar{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #126cbf;
+    Color: #d2daed;
+    height: 30px;
+}
+.bolaFim{
+    margin: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color:#126cbf;
+    text-align: center;
+}
+.bolaFim a{
+    color: #d2daed;
+    font-size: 1rem;
+}
+.baixo{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
