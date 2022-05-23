@@ -21,9 +21,9 @@
         </header>
         <section class="areas">
             <p class="selectAreas">Selecione a especialidade do agendamento</p>
-            <button class="areaBtn">Pediatria</button>
-            <button class="areaBtn">Clínico geral</button>
-            <button class="areaBtn">Triagem odontológica</button>
+            <button class="areaBtn" onclick="pedi()" id="ped">Pediatria</button>
+            <button class="areaBtn" onclick="cG()" id="cG">Clínico geral</button>
+            <button class="areaBtn" onclick="triagem()" id="triagem">Triagem odontológica</button>
             <select name="outros" id="outros">
                 <option value="">Outros</option>
                 <option value="">Oftalmologia</option>
@@ -36,5 +36,7 @@
             <a href="hospital.html"><button class="prox">Avançar</button></a>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
