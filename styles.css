@@ -99,6 +99,7 @@ header p{
     margin: 0;
     padding: 0;
     width: 30px;
+
 }
 
 .selecao{
@@ -225,6 +226,7 @@ header p{
 .dadosplusSelect button{
     border: none;
     font-size: 2rem;
+    background: none;
 }
 
 .medicos{
