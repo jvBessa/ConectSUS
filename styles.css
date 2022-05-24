@@ -2,6 +2,9 @@ body{
     box-sizing: border-box;
     background-color: rgb(118, 175, 224);
     font-family: Roboto, monospace, sans-serif;
+    user-select: none;
+    padding: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -22,6 +25,7 @@ h1{
     height: 844px;
     border: 2px gray solid;
     margin: auto;
+    box-shadow: 5px 5px 10px rgb(82, 79, 79);
 }
 .header{
     display: flex;
@@ -244,6 +248,7 @@ header p{
     gap: 20px;
 }
 .medico{
+    border-radius: 5px;
     border: 1px solid #1167b8;
     display: flex;
     justify-content: space-between;
@@ -371,4 +376,26 @@ header p{
     border: none;
     border-radius: 5px;
     height: 40px;
+}
+footer{
+    background-color: #5d94c5;
+    padding: 40px 40px;
+    text-align: center;
+    color: #d2daed;
+}
+footer p{
+    margin: 0;
+}
+hr{
+    width: 100%;
+    margin: 20px 0 0 0;
+    
+}
+.header1{
+    margin: 0;
+    height: 130px;
+    background-color: #5d94c5;
+}
+#hr1{
+    margin: 0 0 15px 0;
 }
