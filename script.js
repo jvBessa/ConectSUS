@@ -5,11 +5,14 @@ var fila = document.querySelector(".fila");
 var ped = document.querySelector("#ped")
 var clinico = document.querySelector("#cG");
 var tria = document.querySelector("#triagem");
+var outrosBtn = document.querySelector("#outros");
 var hospital = "none";
 
+var medico;
 
 var hospitalAtual = document.querySelector("#hospitalAtual");
-
+var drNome = document.querySelector("#drNome");
+var hospitalFinal = document.querySelector("#hospitalFinal")
 
 var dataAtend = document.querySelector("#date");
 var datas = ['22/06/2022', '24/06/2022', '28/06/2022', '04/07/2022', '10/07/2022'];
@@ -50,6 +53,12 @@ function triagem(){
     clinico.style.border = "none";
     ped.style.border = "none";
 }
+function outro(){
+    console.log("Certo")
+    tria.style.border = "none";
+    clinico.style.border = "none";
+    ped.style.border = "none";
+}
 
 function hA(){
     hospital = "Hospital A";
@@ -78,6 +87,7 @@ function hE(){
 }
 
 hospitalAtual.innerText = sessionStorage.getItem("hospital", hospital);
+
 console.log(hospitalAtual);
 
 
@@ -92,6 +102,33 @@ function down(){
     dataAtend.textContent = datas[dataIndex];
 }
 
-
+function med1(){
+    medico = "Dr. André";
+    console.log(medico);
+    sessionStorage.setItem("medico", medico)
+}
+function med2(){
+    medico = "Dra. Carla";
+    console.log(medico);
+    sessionStorage.setItem("medico", medico)
+}
+function med3(){
+    medico = "Dr. João";
+    console.log(medico);
+    sessionStorage.setItem("medico", medico)
+}
+function med4(){
+    medico = "Dr. Caio";
+    console.log(medico);
+    sessionStorage.setItem("medico", medico)
+}
+function med5(){
+    medico = "Dra. Laura";
+    console.log(medico);
+    sessionStorage.setItem("medico", medico)
+}
+drNome.innerText = sessionStorage.getItem("medico", medico)
+console.log("teste")
 //pagina de conclusão
 
+hospitalFinal.innerText = hospitalAtual.innerText;
