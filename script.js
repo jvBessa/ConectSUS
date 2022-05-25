@@ -7,7 +7,8 @@ var clinico = document.querySelector("#cG");
 var tria = document.querySelector("#triagem");
 var outrosBtn = document.querySelector("#outros");
 var hospital = "none";
-
+var agendados = document.querySelector(".agendados");
+var count = 0;
 var medico;
 
 var hospitalAtual = document.querySelector("#hospitalAtual");
@@ -21,16 +22,22 @@ var dataIndex = 0;
 dataAtend.textContent = datas[dataIndex];
 
 
-
 function mudarBG1(){
     agendamento.style.backgroundColor = "Gray";
     fila.style.backgroundColor = "#f4f7fc";
+    count++;
+    if(count >= 3){
+        agendados.style.visibility = "visible"
+    }
+    
+
     console.log("Certo");
 }
 
 function mudarBG2(){
     fila.style.backgroundColor = "Gray";
     agendamento.style.backgroundColor = "#f4f7fc"
+    agendados.style.visibility = "hidden"
     console.log("Certo");
 }
 
@@ -132,3 +139,6 @@ console.log("teste")
 //pagina de conclusão
 
 hospitalFinal.innerText = hospitalAtual.innerText;
+
+
+
